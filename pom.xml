@@ -5,17 +5,19 @@
     <artifactId>quarkus-javafx-example</artifactId>
     <version>1.0</version>
     <properties>
-        <java.version>11</java.version>
+        <java.version>16</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <quarkus-plugin.version>1.11.1.Final</quarkus-plugin.version>
+        <quarkus-plugin.version>2.2.3.Final</quarkus-plugin.version>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <quarkus.platform.version>1.11.1.Final</quarkus.platform.version>
+        <quarkus.platform.version>2.2.3.Final</quarkus.platform.version>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lombok.version>1.18.20</lombok.version>
+        <javafx.version>17.0.0.1</javafx.version>
     </properties>
 
     <dependencyManagement>
@@ -34,12 +36,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>15.0.1</version>
+            <version>${javafx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>12.0.2</version>
+            <version>${javafx.version}</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -48,7 +50,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.16</version>
+            <version>${lombok.version}</version>
         </dependency>
 
     </dependencies>
@@ -107,7 +109,7 @@
                             <transformers>
                                 <transformer implementation=
                                     "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.acme.javafx.conf.CDIApplication</mainClass>
+                                    <mainClass>org.acme.javafx.CDIApplication</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
