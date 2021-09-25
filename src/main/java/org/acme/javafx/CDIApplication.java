@@ -1,4 +1,4 @@
-package org.acme.javafx.conf;
+package org.acme.javafx;
 
 import io.quarkus.runtime.Quarkus;
 import io.quarkus.runtime.QuarkusApplication;
