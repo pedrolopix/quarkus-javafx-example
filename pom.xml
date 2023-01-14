@@ -64,6 +64,9 @@
                 <version>0.0.3</version>
                 <configuration>
                     <mainClass>HelloFX</mainClass>
+                    <options>
+                      <option>--add-opens javafx.base/com.sun.javafx.reflect=ALL-UNNAMED</option>
+                    </options>
                 </configuration>
             </plugin>
             <plugin>
