@@ -10,13 +10,13 @@ Under the hood, this demo uses:
 
 To compile and run this demo you will need:
 
-- JDK 11+
-- Maven 3.6.3+
+- JDK 17.x+
+- Maven 3.8.x+
 
-### Configuring JDK 11
+### Configuring JDK 17
 
 Make sure that `JAVA_HOME` environment variables have
-been set, and that a JDK 11+ `java` command is on the path.
+been set, and that a JDK 17.x+ `java` command is on the path.
 
 ## Building the application
 
@@ -27,5 +27,6 @@ Launch the Maven build on the checked out sources of this demo:
 
 Then run it:
 
-> java -jar target/quarkus-javafx-example-1.0-runner.jar
+
+> java -jar target/quarkus-app/quarkus-run.jar
 

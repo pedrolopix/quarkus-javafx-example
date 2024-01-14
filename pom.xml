@@ -5,19 +5,19 @@
     <artifactId>quarkus-javafx-example</artifactId>
     <version>1.0</version>
     <properties>
-        <java.version>16</java.version>
+        <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <quarkus-plugin.version>2.2.3.Final</quarkus-plugin.version>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <quarkus.platform.version>2.2.3.Final</quarkus.platform.version>
+        <quarkus.platform.version>3.6.5</quarkus.platform.version>
+        <quarkus-plugin.version>3.6.5</quarkus-plugin.version>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <lombok.version>1.18.20</lombok.version>
-        <javafx.version>17.0.0.1</javafx.version>
+        <lombok.version>1.18.22</lombok.version>
+        <javafx.version>17.0.9</javafx.version>
     </properties>
 
     <dependencyManagement>

@@ -2,16 +2,19 @@ package org.acme.javafx;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import javax.enterprise.inject.spi.CDI;
-import javax.enterprise.util.AnnotationLiteral;
+import jakarta.enterprise.inject.spi.CDI;
+import jakarta.enterprise.util.AnnotationLiteral;
 import org.acme.javafx.conf.StartupScene;
 
 public class FxApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        CDI.current().getBeanManager().fireEvent(primaryStage, new AnnotationLiteral<StartupScene>() {
-        });
+        CDI.current()
+            .getBeanManager()
+            .getEvent()
+            .select(new AnnotationLiteral<StartupScene>() {})
+            .fire(primaryStage);
     }
 
 }

@@ -4,8 +4,8 @@ import org.acme.javafx.conf.StartupScene;
 import java.io.IOException;
 import java.net.URL;
 
-import javax.enterprise.event.Observes;
-import javax.inject.Inject;
+import jakarta.enterprise.event.Observes;
+import jakarta.inject.Inject;
 
 import lombok.SneakyThrows;
 
